@@ -36,10 +36,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rwcalinin/food-site.git"
+    "url": "git+https://github.com/rwcalinin/webstudio-landing.git"
   },
   "bugs": {
-    "url": "https://github.com/rwcalinin/food-site/issues"
+    "url": "https://github.com/rwcalinin/webstudio-landing/issues"
   },
-  "homepage": "https://github.com/rwcalinin/food-site#readme"
+  "homepage": "https://github.com/rwcalinin/webstudio-landing#readme"
 }
