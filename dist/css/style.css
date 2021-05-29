@@ -255,4 +255,62 @@ template {
 
 * {
   font-family: 'PFBeauSansPro';
-  font-weight: 400; }
+  font-weight: 400;
+  color: #000; }
+
+.container {
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto; }
+
+.header {
+  background: #e9e9e9;
+  background: linear-gradient(0deg, #e9e9e9 0%, white 100%);
+  min-height: 336px; }
+  .header__upper-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 157px;
+    text-transform: uppercase; }
+    .header__upper-block * {
+      font-size: 11px;
+      font-weight: 900; }
+  .header__city-changer {
+    cursor: pointer; }
+  .header__city-change {
+    color: #0184d0;
+    border-bottom: 1px dashed #0184d0; }
+  .header__triangle {
+    position: relative;
+    top: 9.5px;
+    left: 5px;
+    border: 5px solid transparent;
+    border-top: 5px solid #000; }
+  .header__callback {
+    display: flex;
+    align-items: center;
+    cursor: pointer; }
+  .header__request-call img {
+    position: relative;
+    bottom: 2px; }
+  .header__request-text {
+    position: relative;
+    top: 1px;
+    margin: 0 42px 0 3px;
+    font-size: 14px;
+    border-bottom: 1px dotted #000; }
+    .header__request-text:hover {
+      border-bottom: 1px dashed #000; }
+  .header__phone-number {
+    font-size: 16px;
+    color: #000; }
+    .header__phone-number:hover {
+      color: #000;
+      text-decoration: none; }
+  .header__yellow-bg {
+    padding: 3px;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #fff000;
+    margin: 0 2.5px 0 0; }

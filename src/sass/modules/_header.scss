@@ -1,0 +1,69 @@
+.header {
+    background: rgb(233,233,233);
+    background: linear-gradient(0deg, rgba(233,233,233,1) 0%, rgba(255,255,255,1) 100%);
+    min-height: 336px;
+//
+// ! upper-block ----------------------------
+    &__upper-block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 157px;
+        text-transform: uppercase;
+        * {
+            font-size: 11px;
+            font-weight: 900;
+        }
+    }
+    &__city-changer {
+        cursor: pointer;
+    }
+    &__city-change {
+        color: #0184d0;
+        border-bottom: 1px dashed #0184d0;
+    }
+    &__triangle {
+        position: relative;
+        top: 9.5px;
+        left: 5px;
+        border: 5px solid transparent; border-top: 5px solid #000;
+    }
+    &__callback {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+    &__request-call {
+        img {
+            position: relative;
+            bottom: 2px;
+        }
+    }
+    &__request-text {
+        position: relative;
+        top: 1px;
+        margin: 0 42px 0 3px;
+        font-size: 14px;
+        border-bottom: 1px dotted #000;
+        &:hover {
+            border-bottom: 1px dashed #000;
+        }
+    }
+    &__phone-number {
+        font-size: 16px;
+        color: #000;
+        &:hover {
+            color: #000;
+            text-decoration: none;
+        }
+    }
+    &__yellow-bg {
+        padding: 3px;
+        font-size: 16px;
+        font-weight: 400;
+        background-color: $main-color;
+        margin: 0 2.5px 0 0;
+    }
+// ! <---------------------------------------
+//
+}
