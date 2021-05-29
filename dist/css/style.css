@@ -272,7 +272,8 @@ input::-webkit-search-results-decoration {
 .header {
   background: #e9e9e9;
   background: linear-gradient(0deg, #e9e9e9 0%, white 100%);
-  min-height: 336px; }
+  min-height: 336px;
+  padding-bottom: 28px; }
   .header__garant {
     position: absolute;
     top: 0;
@@ -300,8 +301,26 @@ input::-webkit-search-results-decoration {
     .header__upper-block * {
       font-size: 11px;
       font-weight: 900; }
-  .header__city-changer {
+  .header__city-basket {
+    display: flex;
     cursor: pointer; }
+    .header__city-basket:after {
+      content: '';
+      position: absolute;
+      top: 155px;
+      height: 2px;
+      width: 362px;
+      background-color: #d9d9d9; }
+  .header__inbasket {
+    color: #0184d0;
+    border-bottom: 1px solid #0184d0;
+    margin-right: 3.5px; }
+  .header__your-order {
+    position: absolute;
+    top: 20px; }
+  .header__city-changer {
+    cursor: pointer;
+    margin-right: 45px; }
   .header__city-change {
     color: #0184d0;
     border-bottom: 1px dashed #0184d0; }
@@ -315,6 +334,13 @@ input::-webkit-search-results-decoration {
     display: flex;
     align-items: center;
     cursor: pointer; }
+    .header__callback:after {
+      content: '';
+      position: absolute;
+      top: 155px;
+      height: 2px;
+      width: 362px;
+      background-color: #d9d9d9; }
   .header__request-call img {
     position: relative;
     bottom: 2px; }
@@ -365,14 +391,18 @@ input::-webkit-search-results-decoration {
         text-transform: uppercase;
         color: #f7f7f7; }
   .header__down-block {
-    text-align: center; }
+    text-align: center;
+    max-width: 808px;
+    margin: 0 auto; }
   .header__subtitle {
     text-transform: uppercase;
     font-size: 23px;
     line-height: 23px;
-    font-weight: 900; }
+    font-weight: 900;
+    margin-top: 28px; }
   .header__descr {
-    font-size: 15px; }
+    font-size: 15px;
+    margin-bottom: 28px; }
   .header__write-dir {
     cursor: pointer;
     color: #0184d0;

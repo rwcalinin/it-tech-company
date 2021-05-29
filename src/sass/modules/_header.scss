@@ -2,6 +2,7 @@
     background: rgb(233,233,233);
     background: linear-gradient(0deg, rgba(233,233,233,1) 0%, rgba(255,255,255,1) 100%);
     min-height: 336px;
+    padding-bottom: 28px;
 //
 // ! images and logos -----------------------
 &__garant {
@@ -39,8 +40,30 @@
             font-weight: 900;
         }
     }
+    &__city-basket {
+        display: flex;
+        cursor: pointer;
+        &:after {
+            content: '';
+            position: absolute;
+            top: 155px;
+            height: 2px;
+            width: 362px;
+            background-color: #d9d9d9;
+        }
+    }
+    &__inbasket {
+        color: $link-color;
+        border-bottom: 1px solid $link-color;
+        margin-right: 3.5px;
+    }
+    &__your-order {
+        position: absolute;
+        top: 20px;
+    }
     &__city-changer {
         cursor: pointer;
+        margin-right: 45px;
     }
     &__city-change {
         color: $link-color;
@@ -56,6 +79,14 @@
         display: flex;
         align-items: center;
         cursor: pointer;
+        &:after {
+            content: '';
+            position: absolute;
+            top: 155px;
+            height: 2px;
+            width: 362px;
+            background-color: #d9d9d9;
+        }
     }
     &__request-call {
         img {
@@ -126,15 +157,19 @@
 // ! down-block -----------------------------
     &__down-block {
         text-align: center;
+        max-width: 808px;
+        margin: 0 auto;
     }
     &__subtitle {
         text-transform: uppercase;
         font-size: 23px;
         line-height: 23px;
         font-weight: 900;
+        margin-top: 28px;
     }
     &__descr {
         font-size: 15px;
+        margin-bottom: 28px;
     }
     &__write-dir {
         cursor: pointer;
