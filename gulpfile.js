@@ -62,6 +62,15 @@ gulp.task("copy-assets", () => {
                 .pipe(browsersync.stream());
 });
 
+gulp.task("copy-assets", () => {
+  gulp.src("./src/icons/**/*.*")
+      .pipe(gulp.dest(dist + "/icons"));
+
+  return gulp.src("./src/icons/**/*.*")
+              .pipe(gulp.dest(dist + "/icons"))
+              .pipe(browsersync.stream());
+});
+
 gulp.task("watch", () => {
     browsersync.init({
 		server: "./dist/",
