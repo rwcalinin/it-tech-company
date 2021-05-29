@@ -273,7 +273,25 @@ input::-webkit-search-results-decoration {
   background: #e9e9e9;
   background: linear-gradient(0deg, #e9e9e9 0%, white 100%);
   min-height: 336px; }
+  .header__garant {
+    position: absolute;
+    top: 0;
+    left: 0; }
+  .header__logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-65%); }
+  .header__company-name {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-55%);
+    top: 100px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 900; }
   .header__upper-block {
+    margin-bottom: 110px;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -307,7 +325,8 @@ input::-webkit-search-results-decoration {
     font-size: 14px;
     border-bottom: 1px dotted #000; }
     .header__request-text:hover {
-      border-bottom: 1px dashed #000; }
+      color: #0184d0;
+      border-bottom: 1px dotted #0184d0; }
   .header__phone-number {
     font-size: 16px;
     color: #000; }
@@ -320,22 +339,41 @@ input::-webkit-search-results-decoration {
     font-weight: 400;
     background-color: #fff000;
     margin: 0 2.5px 0 0; }
-  .header__search img {
-    position: relative;
-    right: 30px;
+  .header__search {
+    text-align: center;
+    position: absolute;
+    top: 140px;
+    left: 50%;
+    transform: translateX(-50%); }
+    .header__search img {
+      position: relative;
+      right: 30px;
+      cursor: pointer;
+      width: 15px; }
+    .header__search-input {
+      padding: 0 13px;
+      font-size: 16px;
+      width: 187px;
+      height: 32px;
+      color: #fff;
+      background-color: #363636;
+      border-radius: 5px;
+      border: none; }
+      .header__search-input::placeholder {
+        font-size: 10px;
+        line-height: 10px;
+        text-transform: uppercase;
+        color: #f7f7f7; }
+  .header__down-block {
+    text-align: center; }
+  .header__subtitle {
+    text-transform: uppercase;
+    font-size: 23px;
+    line-height: 23px;
+    font-weight: 900; }
+  .header__descr {
+    font-size: 15px; }
+  .header__write-dir {
     cursor: pointer;
-    width: 15px; }
-  .header__search-input {
-    padding: 0 13px;
-    font-size: 16px;
-    width: 187px;
-    height: 32px;
-    color: #fff;
-    background-color: #363636;
-    border-radius: 5px;
-    border: none; }
-    .header__search-input::placeholder {
-      font-size: 10px;
-      line-height: 10px;
-      text-transform: uppercase;
-      color: #f7f7f7; }
+    color: #0184d0;
+    border-bottom: 1px solid #0184d0; }
