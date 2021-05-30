@@ -7,13 +7,17 @@
     }
     // ! ---------------
     &__hotline {
+        position: relative;
+        left: 6.5%;
         text-align: center;
         line-height: normal;
     }
     &__descr {
+        margin-top: 41px;
         font-size: 15px;
     }
     &__call-us {
+        margin-top: 27px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -38,6 +42,7 @@
         }
     }
     &__or {
+        margin-top: 28px;
         font-size: 12px;
         font-weight: 900;
         color: #878d98;
@@ -46,6 +51,53 @@
             font-weight: 900;
             color: #878d98;
         }
+    }
+    &__formbox {
+        margin-top: 26px;
+    }
+    &__form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &-input {
+            margin-right: 15px;
+            height: 32px;
+            width: 200px;
+            color: #fff;
+            background-color: #363636;
+            padding: 10px;
+            border: none;
+            border-radius: 7px;
+            &:focus {
+                outline: none;
+            }
+            &::placeholder {
+                font-size: 10px;
+                color: #fff;
+                text-transform: uppercase;
+            }
+            
+        }
+        &-submit {
+            font-size: 11px;
+            height: 32px;
+            width: 105px;
+            border: solid 1px #f9cf00;
+            border-radius: 7px;
+            text-transform: uppercase;
+            font-weight: 900;
+            background-image: linear-gradient(to top, #f5db00, #fff000);
+            &:focus {
+                outline: none;
+            }
+            &:hover {
+                background-image: linear-gradient(to top, #fff000, #f5db00);
+            }
+        }
+    }
+    &__ps {
+        margin-top: 32px;
+        font-size: 12px;
     }
     // ! <--------------
 
