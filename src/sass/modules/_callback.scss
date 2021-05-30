@@ -103,8 +103,39 @@
 
     // ! ---------------
     &__your-consult {
+        text-align: center;
         width: 492px;
         background: url('../../img/micro-block.png');
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        text-transform: uppercase;
+    }
+    &__container {
+        width: 380px;
+    }
+    &__consultant {
+        font-size: 11px;
+        font-weight: 900;
+        margin-bottom: 16px;
+        &-img {
+            width: 196px;
+        }
+        &-name {
+            margin: 20px auto;
+            font-size: 15px;
+            font-weight: 900;
+            background-color: $main-color;
+            max-width: 200px;
+        }
+        &-exp {
+            font-size: 11px;
+            color: #878d98;
+            span {
+                font-size: 21px;
+                color: #878d98;
+            }
+        }
     }
     // ! <--------------
 }

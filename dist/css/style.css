@@ -571,5 +571,30 @@ input::-webkit-search-results-decoration {
     margin-top: 32px;
     font-size: 12px; }
   .callback__your-consult {
+    text-align: center;
     width: 492px;
-    background: url("../../img/micro-block.png"); }
+    background: url("../../img/micro-block.png");
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-transform: uppercase; }
+  .callback__container {
+    width: 380px; }
+  .callback__consultant {
+    font-size: 11px;
+    font-weight: 900;
+    margin-bottom: 16px; }
+    .callback__consultant-img {
+      width: 196px; }
+    .callback__consultant-name {
+      margin: 20px auto;
+      font-size: 15px;
+      font-weight: 900;
+      background-color: #fff000;
+      max-width: 200px; }
+    .callback__consultant-exp {
+      font-size: 11px;
+      color: #878d98; }
+      .callback__consultant-exp span {
+        font-size: 21px;
+        color: #878d98; }
