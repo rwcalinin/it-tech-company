@@ -450,6 +450,7 @@ input::-webkit-search-results-decoration {
     display: flex;
     justify-content: stretch; }
   .service__block {
+    position: relative;
     width: 50%;
     letter-spacing: 1.5px; }
   .service__title {
@@ -476,8 +477,6 @@ input::-webkit-search-results-decoration {
   .service .black-bg:hover {
     color: #fff;
     background-image: linear-gradient(to top, #2a2a2a, #353535); }
-  .service__boxlist {
-    position: relative; }
   .service__y-man {
     position: absolute;
     bottom: -51px;
