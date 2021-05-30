@@ -12,22 +12,23 @@
         align-items: center;
     }
     &__item {
-        min-width: 110px;
+        min-width: 165px;
         display: flex;
         flex-direction: column;
         align-items: center;
         color: #fff;
         font-weight: 900;
         letter-spacing: 1px;
-        transition: all 0.3s;
         text-transform: uppercase;
+        padding: 20px;
+        border-radius: 10px;
         img {
             height: 50px;
         }
         &:hover {
-            background-color: $main-color;
+            background-image: linear-gradient(to top, #f8cc00, $main-color);
             color: #000;
-            box-shadow: 0 0 15px 20px $main-color;
+            // box-shadow: 0 0 15px 20px $main-color;
             text-decoration: none;
         }
     }
