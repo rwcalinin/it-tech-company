@@ -1,7 +1,8 @@
-function reqCall({reqBtnsClass, mWindow, bgModal, clModal}) {
+function reqCall({reqBtnsClass, mWindow, bgModal, clModal, tWindow}) {
     
     const reqButtons = document.querySelectorAll(reqBtnsClass),
           modalWindow = document.querySelector(mWindow),
+          thanksWindow = document.querySelector(tWindow),
           modalBg = document.querySelector(bgModal),
           modalClose = document.querySelector(clModal);
     
@@ -25,13 +26,19 @@ function reqCall({reqBtnsClass, mWindow, bgModal, clModal}) {
 // ! <----------------------------------------------
 
     function toggleModalForm() {
+
         modalWindow.classList.toggle('hide');
         modalBg.classList.toggle('hide');
-        if (modalWindow.classList.contains('hide')) {
-            document.querySelector('body').style.overflow = 'visible';
-        } else {
+        
+        modalWindow.classList.contains('hide') ?
+            document.querySelector('body').style.overflow = 'visible'
+            :
             document.querySelector('body').style.overflow = 'hidden';
-        }
+        
+    }
+
+    function toggleThanksForm() {
+
     }
 
 }

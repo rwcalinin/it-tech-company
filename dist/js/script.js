@@ -99,10 +99,12 @@ function reqCall({
   reqBtnsClass,
   mWindow,
   bgModal,
-  clModal
+  clModal,
+  tWindow
 }) {
   const reqButtons = document.querySelectorAll(reqBtnsClass),
         modalWindow = document.querySelector(mWindow),
+        thanksWindow = document.querySelector(tWindow),
         modalBg = document.querySelector(bgModal),
         modalClose = document.querySelector(clModal); // ! EVENTS FOR MODAL TOGGLE -----------------------
   //
@@ -125,13 +127,10 @@ function reqCall({
   function toggleModalForm() {
     modalWindow.classList.toggle('hide');
     modalBg.classList.toggle('hide');
-
-    if (modalWindow.classList.contains('hide')) {
-      document.querySelector('body').style.overflow = 'visible';
-    } else {
-      document.querySelector('body').style.overflow = 'hidden';
-    }
+    modalWindow.classList.contains('hide') ? document.querySelector('body').style.overflow = 'visible' : document.querySelector('body').style.overflow = 'hidden';
   }
+
+  function toggleThanksForm() {}
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (reqCall);
@@ -155,6 +154,7 @@ document.addEventListener('DOMContentLoaded', () => {
   Object(_modules_modal__WEBPACK_IMPORTED_MODULE_0__["default"])({
     reqBtnsClass: '.getcall',
     mWindow: '.modal',
+    tWindow: '.thanks',
     bgModal: '.modal-bg',
     clModal: '.modal__close'
   });

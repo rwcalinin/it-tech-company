@@ -72,3 +72,27 @@
         margin-bottom: 20px;
     }
 }
+
+.thanks {
+    cursor: default;
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 499px;
+    height: 167px;
+    background: url('../../img/thanks-modal-bg.png') #eeeeee;
+    border-radius: 16px;
+    text-align: center;
+    &__title {
+        margin-top: 25px;
+        text-transform: uppercase;
+        font-weight: 900;
+        font-size: 35px;
+    }
+    &__descr {
+        margin: 0 auto;
+        font-size: 14px;
+        width: 320px;
+    }
+}
