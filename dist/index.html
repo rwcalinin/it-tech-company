@@ -26,16 +26,15 @@
                         <span class="header__city-change">Москва</span>
                         <span class="header__triangle"></span>
                     </div>
-                    <div class="header__basket-box">
-                        <img src="./img/our-prod.png" alt="" class="header__your-order">
-                        <span class="header__inbasket">В корзине:</span>
-                        <span class="header__inbasket-order">159 ШТ. - 800.000 РУБ.</span>
+                    <div class="header__request-box">
+                        <span class="header__request">Статус заявки: </span>
+                        <span class="header__request-order">отсутствует</span>
                     </div>
                 </div>
                 <div class="header__callback">
                     <div class="header__request-call">
                         <img src="./icons/phone.png" alt="PH">
-                        <span class="header__request-text">Заказать звонок</span>
+                        <span class="header__request-text getcall">Заказать звонок</span>
                     </div>
                     <div class="header__phone">
                         <a href="tel:88001234567" class="header__phone-number">
@@ -191,14 +190,14 @@
                     <div class="ourcompany__text">Наша компания работает на рынке компьютерных услуг Москвы с 2007 года
                         и оказывает компьютерную помощь
                         все желающим жителям города. За время работы компания ItCompany зарекомендовала себя как
-                        <strong>профессиональный, компетентный и мобильный IT-сервис</strong>, готовый приехать в Ваш
+                        профессиональный, компетентный и мобильный IT-сервис, готовый приехать в Ваш
                         дом, для решения
                         любой
                         компьютерной задачи.
                         <br><br>
                         Компания АйтиКомпани предлагает Вам полный спектр IT-услуг и компьютерного обслуживания.
-                        <strong>Наиболее
-                            восстребоваными являются в Москве</strong>: компьютерная помощь на дому; ремонт, настройка,
+                        Наиболее
+                            восстребоваными являются в Москве: компьютерная помощь на дому; ремонт, настройка,
                         установка
                         компьютеров
                         и локальных сетей на выезде и в сервисном центре.
@@ -276,7 +275,7 @@
                         </div>
                     </div>
                     <div class="footer__sitemap"><img src="./icons/info.png" alt="info">Карта сайта</div>
-                    <div class="footer__getcall">Заказать звонок</div>
+                    <div class="footer__getcall getcall">Заказать звонок</div>
                     <div class="footer__email"><a href="mailto:info@itcompany.ru"
                             class="footer__mailto">info@itcompany.ru</a></div>
                 </div>
@@ -295,6 +294,21 @@
     </footer>
     <!-- FOOTER---FOOOTER -->
 
+    <!-- MODALS ! MODALS -->
+    <div class="modal-bg"></div>
+    <div class="modal">
+        <h2 class="callback__title">Заказать звонок</h2>
+        <div class="callback__formbox">
+            <form action="POST" class="callback__form">
+                <input type="text" placeholder="ИМЯ" name="clientName" class="callback__form-input">
+                <input type="text" placeholder="ТЕЛЕФОН" name="clientTel" class="callback__form-input">
+                <div class="callback__text">Наши менеджеры перезвонят Вам в течение 20 минут и с удовольствием ответят на Ваши вопросы</div>
+                <button class="callback__form-submit">Отправить</button>
+            </form>
+        </div>
+        <div class="modal__close"></div>
+    </div>
+    <!-- MODALS---MODALS -->
 
     <script src="js/script.js"></script>
 
