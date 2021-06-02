@@ -30,15 +30,6 @@ function reqCall({reqBtnsClass, mWindow, bgModal, clModal, tWindow}) {
         modalWindow.classList.toggle('hide');
         modalBg.classList.toggle('hide');
         
-        modalWindow.classList.contains('hide') ?
-            document.querySelector('body').style.overflow = 'visible'
-            :
-            document.querySelector('body').style.overflow = 'hidden';
-        
-    }
-
-    function toggleThanksForm() {
-
     }
 
 }

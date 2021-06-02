@@ -127,10 +127,7 @@ function reqCall({
   function toggleModalForm() {
     modalWindow.classList.toggle('hide');
     modalBg.classList.toggle('hide');
-    modalWindow.classList.contains('hide') ? document.querySelector('body').style.overflow = 'visible' : document.querySelector('body').style.overflow = 'hidden';
   }
-
-  function toggleThanksForm() {}
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (reqCall);
