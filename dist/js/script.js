@@ -96,16 +96,42 @@
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 function reqCall({
-  reqBtnsClass
+  reqBtnsClass,
+  mWindow,
+  bgModal,
+  clModal
 }) {
-  const reqButtons = document.querySelectorAll(reqBtnsClass);
+  const reqButtons = document.querySelectorAll(reqBtnsClass),
+        modalWindow = document.querySelector(mWindow),
+        modalBg = document.querySelector(bgModal),
+        modalClose = document.querySelector(clModal); // ! EVENTS FOR MODAL TOGGLE -----------------------
+  //
+
   reqButtons.forEach(button => {
     button.addEventListener('click', () => {
-      console.log('da');
+      toggleModalForm();
     });
-  });
+  }); //
 
-  function toggleModalForm() {}
+  modalClose.addEventListener('click', () => {
+    toggleModalForm();
+  }); //
+
+  modalBg.addEventListener('click', () => {
+    toggleModalForm();
+  }); //
+  // ! <----------------------------------------------
+
+  function toggleModalForm() {
+    modalWindow.classList.toggle('hide');
+    modalBg.classList.toggle('hide');
+
+    if (modalWindow.classList.contains('hide')) {
+      document.querySelector('body').style.overflow = 'visible';
+    } else {
+      document.querySelector('body').style.overflow = 'hidden';
+    }
+  }
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (reqCall);
@@ -127,7 +153,10 @@ __webpack_require__.r(__webpack_exports__);
 
 document.addEventListener('DOMContentLoaded', () => {
   Object(_modules_modal__WEBPACK_IMPORTED_MODULE_0__["default"])({
-    reqBtnsClass: '.getcall'
+    reqBtnsClass: '.getcall',
+    mWindow: '.modal',
+    bgModal: '.modal-bg',
+    clModal: '.modal__close'
   });
 });
 
