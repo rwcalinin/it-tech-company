@@ -598,3 +598,34 @@ input::-webkit-search-results-decoration {
       .callback__consultant-exp span {
         font-size: 21px;
         color: #878d98; }
+
+.ourcompany {
+  background-color: #dadbdd; }
+  .ourcompany__title {
+    font-size: 35px;
+    line-height: 48px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 50px;
+    max-width: 920px;
+    padding: 50px 0px;
+    margin: 0 auto; }
+  .ourcompany__content {
+    display: flex;
+    padding-bottom: 50px;
+    justify-content: center; }
+  .ourcompany__img {
+    height: 260px;
+    margin-right: 21px; }
+  .ourcompany__subtitle {
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    max-width: 660px; }
+  .ourcompany__text {
+    font-size: 15px;
+    line-height: 20px;
+    max-width: 660px; }
