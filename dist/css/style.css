@@ -677,6 +677,7 @@ input::-webkit-search-results-decoration {
       align-items: center;
       margin-right: 30px; }
     .footer__hours-text {
+      cursor: default;
       font-size: 33px;
       line-height: 33px;
       text-transform: uppercase;
@@ -696,6 +697,7 @@ input::-webkit-search-results-decoration {
       align-items: center;
       margin-right: 30px; }
     .footer__contacts-text {
+      cursor: default;
       font-size: 33px;
       line-height: 33px;
       text-transform: uppercase;
@@ -716,6 +718,7 @@ input::-webkit-search-results-decoration {
     display: flex;
     align-items: center; }
     .footer__smm-text {
+      cursor: default;
       margin-right: 20px;
       text-transform: inherit; }
     .footer__smm-link {
