@@ -838,6 +838,13 @@ input::-webkit-search-results-decoration {
   background: url("../../img/thanks-modal-bg.png") #eeeeee;
   border-radius: 16px;
   text-align: center; }
+  .thanks-bg {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5; }
   .thanks__title {
     margin-top: 25px;
     text-transform: uppercase;

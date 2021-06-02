@@ -8,6 +8,8 @@ document.addEventListener('DOMContentLoaded', () => {
         mWindow: '.modal',
         tWindow: '.thanks',
         bgModal: '.modal-bg',
-        clModal: '.modal__close'
+        bgThanks: '.thanks-bg',
+        clModal: '.modal__close',
+        sButton: '.callback__form-submit'
     });
 });
