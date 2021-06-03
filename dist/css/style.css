@@ -854,3 +854,22 @@ input::-webkit-search-results-decoration {
     margin: 0 auto;
     font-size: 14px;
     width: 320px; }
+
+@media (max-width: 1320px) {
+  .header__garant {
+    display: none; }
+  .header__upper-block {
+    margin-left: 20px;
+    margin-right: 20px; }
+  .service {
+    padding-left: 20px;
+    padding-right: 20px; }
+    .service__y-man {
+      width: 65%; }
+    .service__b-man {
+      width: 65%; }
+  .callback__descr {
+    font-size: 13px; }
+  .footer {
+    padding-left: 20px;
+    padding-right: 20px; } }

@@ -1,0 +1,30 @@
+@media (max-width: 1320px) {
+    .header {
+        &__garant {
+            display: none;
+        }
+        &__upper-block {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+    }
+    .service {
+        padding-left: 20px;
+        padding-right: 20px;
+        &__y-man {
+            width: 65%;
+        }
+        &__b-man {
+            width: 65%;
+        }
+    }
+    .callback {
+        &__descr {
+            font-size: 13px;
+        }
+    }
+    .footer {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
