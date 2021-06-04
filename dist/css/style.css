@@ -859,8 +859,8 @@ input::-webkit-search-results-decoration {
   .header__garant {
     display: none; }
   .header__upper-block {
-    margin-left: 20px;
-    margin-right: 20px; }
+    padding-left: 20px;
+    padding-right: 20px; }
   .service {
     padding-left: 20px;
     padding-right: 20px; }
@@ -885,3 +885,106 @@ input::-webkit-search-results-decoration {
   .ourcompany__content {
     padding-left: 20px;
     padding-right: 20px; } }
+
+@media (max-width: 990px) {
+  hr {
+    display: none; }
+  .header__request-box {
+    display: none; }
+  .header__request-call {
+    display: none; }
+  .header__callback::after {
+    display: none; }
+  .header__city-basket::after {
+    display: none; }
+  .service .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center; }
+  .service__block {
+    margin-bottom: 40px;
+    width: auto; }
+  .service__title {
+    margin-bottom: 20px;
+    font-size: 35px;
+    line-height: 35px; }
+  .service__list {
+    padding: 0; }
+  .service__item {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+    width: 320px; }
+  .service__y-man {
+    display: none; }
+  .service__b-man {
+    display: none; }
+  .menu__item {
+    padding: 0;
+    min-width: 1px;
+    width: 100px;
+    font-size: 12px; }
+  .ourcompany__content {
+    flex-direction: column; }
+  .ourcompany__img {
+    margin: 0;
+    padding-bottom: 50px; } }
+
+@media (max-width: 768px) {
+  .service__title {
+    font-size: 28px; }
+    .service__title-small {
+      font-size: 24px; }
+  .ourcompany__title {
+    font-size: 28px;
+    line-height: 28px; }
+  .footer__menu {
+    flex-wrap: wrap; }
+  .footer__link {
+    padding: 5px 10px; }
+  .footer__hours-left {
+    display: none; }
+  .footer__contacts-left {
+    display: none; }
+  .footer__main-down {
+    flex-direction: column; }
+  .footer__smm {
+    padding-bottom: 25px; }
+  .footer__getcall {
+    margin: 20px 0; }
+  .footer__ps {
+    justify-content: center; }
+  .footer__madeby {
+    display: none; } }
+
+@media (max-width: 570px) {
+  .header__phone {
+    display: none; }
+  .header__city-changer {
+    display: none; }
+  .menu {
+    display: none; }
+  .callback__call-us-number {
+    font-size: 20px; }
+  .callback__form {
+    flex-direction: column; }
+    .callback__form-input {
+      margin-bottom: 15px; }
+  .callback__ps {
+    margin-top: 0px;
+    display: none; }
+  .callback__or {
+    display: none; }
+  .ourcompany__title {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px; }
+  .footer__menu {
+    display: none; }
+  .footer__smm-text {
+    display: none; }
+  .footer__copyright {
+    text-align: center; }
+  .footer__main-upper {
+    flex-direction: column;
+    text-align: center; } }
